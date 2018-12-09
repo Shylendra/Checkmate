@@ -57,11 +57,7 @@ Feature: Every piece in chess moves differently as defined in the rules
 ### Cucumber report
 
 The Cucumber JUnit test case generates the cucumber report:
-
-```
-![](https://user-images.githubusercontent.com/1583027/49697469-c08b6200-fc0b-11e8-8c6b-9277a6c2ee24.jpg)
-
-```
+![Cucumber report](Checkmate/Checkmate_CucumberReport.jpg)
 
 ## Deployment
 
