@@ -23,7 +23,7 @@ public class CheckmateUtilTest {
 		Integer yAxisElementValue = CheckmateUtil.getIndex(xAxisElementKey);
 
 		assertNotNull(yAxisElementValue);
-		assertEquals(new Integer(7), yAxisElementValue);
+		assertEquals(new Integer(8), yAxisElementValue);
 	}
 
 	@Test

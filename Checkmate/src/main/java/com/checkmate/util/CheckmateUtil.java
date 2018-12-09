@@ -26,7 +26,11 @@ public class CheckmateUtil {
 	public static final String xH = "H";
 	
 	public static final String INVALID_INPUT_ERROR_MSG = "Invalid input!";
-	public static final String INVALID_MOVEMENT_ERROR_MSG = "Invalid movement!";
+	public static final String INVALID_MOVEMENT_ERROR_MSG = "Illegal movement!";
+	
+	public static final String QUEEN_TXT = "Queen";
+	public static final String KNIGHT_TXT = "Knight";
+	public static final String BISHOP_TXT = "Bishop";
 	
 	public static Map<String, Pair<String, Integer>> getXmap() {
 

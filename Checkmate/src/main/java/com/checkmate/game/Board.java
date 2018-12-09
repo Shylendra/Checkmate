@@ -1,10 +1,11 @@
 package com.checkmate.game;
 
-import com.checkmate.exceptions.InvalidMovementException;
+import com.checkmate.exceptions.IllegalMovementException;
 import com.checkmate.model.Bishop;
 import com.checkmate.model.Knight;
 import com.checkmate.model.Piece;
 import com.checkmate.model.Queen;
+import com.checkmate.util.CheckmateUtil;
 
 public class Board {
 	public BoardSpot[][] boardSpots = new BoardSpot[8][8];
@@ -22,7 +23,7 @@ public class Board {
         return boardSpots[x][y];
     }
 
-    public void movePiece(Piece piece, int steps) throws InvalidMovementException {
+    public void movePiece(Piece piece, int steps) throws IllegalMovementException {
     	
     	int newX = piece.getX();
     	int newY = piece.getY();
@@ -41,7 +42,7 @@ public class Board {
     		piece.setX(newX);
     		piece.setY(newY);
     	} else {
-    		throw new InvalidMovementException();
+    		throw new IllegalMovementException(CheckmateUtil.INVALID_MOVEMENT_ERROR_MSG);
     	}
     	
     }
